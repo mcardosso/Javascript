@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+<style>
+div#area{
+    font: oblique 30pt arial;
+    background:rgb(2, 2, 2);
+    color: thistle;
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+}
+
+</style>
+
+
+</head>
+<body><div id='area' 
+   
+    
+    >
+interaja </div>
+
+
+
+
+
+
+    <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('enter', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', saiu)
+    a.addEventListener('mousedown', segurou)
+
+
+    function clicar() {
+    a.innerText='clicou'
+    a.style.background = 'red'}
+    function entrar() {
+    a.innerText='entrou'
+    a.style.background = "blue"}
+    function segurou() {
+        a.style.background = 'yellow'
+        a.innerText='segurou'}
+    function saiu() {
+        a.style.background=' black'
+        a.innerText='saiu'}
+
+
+
+    </script>
+</body>
+</html>

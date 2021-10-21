@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body {
+            background-color: rgb(104, 104, 223);
+            font:oblique 20pt arial;
+            color: rgb(255, 254, 254)
+            ;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>Hi, world</h1>
+   <p> result</p>
+   <div id="msg">click</div>
+   <p>learning <b>DOM</b></p>
+
+
+<script>
+
+corpo = window.document.body
+p1 = window.document.getElementsByTagName('p')[1]
+p1.style.color='black'
+corpo.style.background = 'purple'
+//d=window.document.getElementsByClassName('msg')[0]
+//d.style.background= 'green'
+d=window.document.querySelector('div#msg')
+d.style.color = 'black'
+
+</script>
+</body>
+</html>

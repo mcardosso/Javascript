@@ -1,0 +1,16 @@
+body{
+text-align: center;
+margin: 20% ;
+
+}
+.spinner{
+    height: 60px;
+    width: 60px;
+    animation: spinner 0.7s linear infinite;
+    
+}
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
